@@ -6,21 +6,25 @@
   .contents_box
     .contents_box__goods-image
       %p 出品画像
+      %input{:type=>"image"}
     .contents_box__goods
       .contents_box__goods__name
-        商品名
-
+        %p 商品名
+        %input{:type=>"text"}
       .contents_box__goods__explain
-        商品の説明
-    
+        %p 商品の説明
+        %input{:type=>"text"}
     .contents_box__detail
-      商品の詳細
-      .contents_box__detail__ctegory
-      カテゴリー
+      %p.title 商品の詳細
+      .contents_box__detail__category
+      %p カテゴリー
+      %input{:type=>"text"}
       .contents_box__detail__brand
-      ブランド
+      %p ブランド
+      %input{:type=>"text"}
       .contents_box__detail__sratus
-      商品の状態
+      %p 商品の状態
+      %input{:type=>"text"}
     
     -# .contents_box__shipping
     -#   配送
@@ -32,15 +36,18 @@
     -#   配送までの日数
 
     .contents_box__price
-      価格
+      %p.title 価格
       .contents_box__price__selling-price
-      販売価格
+      %p 販売価格
       .contents_box__price__fee
-      販売手数料
+      %p 販売手数料(10%)
       .contents_box__price__profit
-      販売利益
+      %p 販売利益
     .contents_box__btn_wrap
-      出品する、保存、もどる
+
+      %p 出品する 
+      %p 保存
+      %p もどる
     .contents_box__note 
       %p 禁止されている行為および出品物
 
